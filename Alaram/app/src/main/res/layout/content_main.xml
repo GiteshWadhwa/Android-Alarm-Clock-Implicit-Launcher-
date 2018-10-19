@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@android:color/darker_gray">
+<TimePicker
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/timepicker"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/alarm_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timepicker"
+        android:text="Turn on"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/alarm_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/timepicker"
+        android:text="Turn off"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:clickable="true"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:text="you set the alarm?"
+       android:id="@+id/update_text"
+       android:layout_below="@+id/alarm_on"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
